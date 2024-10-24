@@ -1,0 +1,42 @@
+/* khai báo root hoặc html sẽ áp dụng cho toàn trang */
+:root {
+  --box-height: 150px;
+  --box-color: #0f0;
+}
+.box1 {
+  background-color: var(--box-color, purple); /*backup or fallback*/
+  height: var(--box-height);
+  margin-bottom: 10px;
+}
+.box2 {
+  background-color: var(--box-color);
+  height: var(--box-height);
+  margin-bottom: 10px;
+}
+.box3 {
+  background-color: var(--box-color);
+  height: var(--box-height);
+  margin-bottom: 10px;
+}
+.detail {
+  --p-fontsize: 30px;
+  /* font-size: var(--p-fontsize); */
+}
+.detail span {
+  font-size: var(--p-fontsize);
+}
+/* .box1 {
+  background-color: #0f0;
+  height: 110px;
+  margin-bottom: 10px;
+}
+.box2 {
+  background-color: #0f0;
+  height: 110px;
+  margin-bottom: 10px;
+}
+.box3 {
+  background-color: #0f0;
+  height: 110px;
+  margin-bottom: 10px;
+} */
